@@ -1,0 +1,7 @@
+/logs/*
+/nbproject
+/vendor
+/config
+composer.lock
+.vscode/
+/nbproject

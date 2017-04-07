@@ -1,0 +1,23 @@
+{
+    "name": "renan.delmonico/restful",
+    "description": "restful",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Renan Delmonico",
+            "email": "renandelmonico@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": ["app/", "sys/"]
+        }
+    },
+    "require": {
+        "slim/slim": "^3.7",
+        "monolog/monolog": "^1.22",
+        "cakephp/validation": "^3.3",
+        "tuupola/slim-jwt-auth": "^2.3",
+        "cakephp/database": "^3.3"
+    }
+}

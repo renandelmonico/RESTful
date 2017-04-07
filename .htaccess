@@ -1,0 +1,22 @@
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1
+RewriteRule .* - [env=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+<Files "*.json">
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files "*.lock">
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files "*.log">
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files "*.txt">
+    Order Deny,Allow
+    Deny from all
+</Files>
+Options -Indexes
